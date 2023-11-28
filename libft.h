@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 13:00:00 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/28 17:22:23 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -68,11 +68,13 @@
 size_t	ft_strlen(const char *s); //Obtiene longitud
 int		ft_isalpha(int c); //Comprueba letras
 int		ft_isdigit(int c); //Comprueba numeros
+int		ft_isalnum(int c); //Comprueba letras y numeros
 
-/* 11 - ft_isalnum - busca un caracter alfanumerico pasado como parametro,
-	retorna 1 true, 0 false. */
 /* 12 - ft_isascii - comprueba si c es un valor de carácter sin signo de 7 bits
 	que se ajusta al conjunto de caracteres ASCII. */
+
+int		ft_isprint(int c); //Comprueba que sea imprimible
+
 /* 13 - ft_isprint - comprueba cualquier carácter imprimible,
 	incluido el espacio. */
 /* 14 - ft_toupper - convierte la letra c pasada como parametro a mayúsculas,
@@ -131,6 +133,7 @@ int		ft_isdigit(int c); //Comprueba numeros
 	de f. Devuelve NULL si falla la asignación. */
 /* 31 - ft_putchar_fd - Escribe el carácter c sobre el file descriptor
 	proporcionado. */
+void	ft_putchar_fd(char c, int fd); // imprime un caracter en la salidad dada
 /* 32 - ft_putstr_fd - Escribe la cadena de caracteres c sobre el descriptor de
 	fichero proporcionado. */
 /* 33 - ft_putendl_fd - Escribe la cadena de caracteres s sobre el file
