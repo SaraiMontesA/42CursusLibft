@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 17:22:23 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:03:07 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -66,21 +66,17 @@
 	primeros n bytes de s2. */
 
 size_t	ft_strlen(const char *s); //Obtiene longitud
-int		ft_isalpha(int c); //Comprueba letras
-int		ft_isdigit(int c); //Comprueba numeros
-int		ft_isalnum(int c); //Comprueba letras y numeros
+int		ft_isalpha(int c);			//09-Comprueba letras
+int		ft_isdigit(int c);			//10-Comprueba numeros
+int		ft_isalnum(int c);			//11-Comprueba letras y numeros
 
 /* 12 - ft_isascii - comprueba si c es un valor de carácter sin signo de 7 bits
 	que se ajusta al conjunto de caracteres ASCII. */
 
-int		ft_isprint(int c); //Comprueba que sea imprimible
+int		ft_isprint(int c);			//13-Comprueba que sea imprimible
+int		ft_toupper(int c);			//14-Convierte a mayusculas
+int		ft_tolower(int c);				//15-Convierte a minusculas
 
-/* 13 - ft_isprint - comprueba cualquier carácter imprimible,
-	incluido el espacio. */
-/* 14 - ft_toupper - convierte la letra c pasada como parametro a mayúsculas,
-	si es posible. */
-/* 15 - ft_tolower - convierte la letra c pasada como parametro a minúsculas,
-	si es posible. */
 /* 16 - ft_strchr - devuelve un puntero a la primera aparición del caracter c
 	en la cadena s. */
 /* 17 - ft_strrchr - devuelve un puntero a la última aparición del caracter c
