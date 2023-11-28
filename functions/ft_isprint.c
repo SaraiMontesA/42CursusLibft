@@ -1,34 +1,33 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 17:38:47 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/28 16:09:01 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-int	ft_isalnum(int c)
+int	ft_isprint(int c)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')
-		|| (c >= '0' && c <= '9'))
+	if (c >= 32 && c <= 126)
 		return (1);
 	else
 		return (0);
 }
 
 /*
-int	ft_isalpha(int c)
-{
-	// si c está entre a y z, o si c está entre A y Z
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-		return (1); // Devuelve 1
-	else
-		return (0); // Devuelve 0
-}
+	int	ft_isalpha(int c)
+	{
+		// si c está entre ascii 32 y ascii 126
+		if (c >= 32 && c <= 126)
+			return (1); // Devuelve 1
+		else
+			return (0); // Devuelve 0
+	}
 */
