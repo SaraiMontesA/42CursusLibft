@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 18:03:07 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:08:39 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -65,17 +65,17 @@
 	bytes de s1 , respectivamente, son menores, coinciden o son mayores que los
 	primeros n bytes de s2. */
 
-size_t	ft_strlen(const char *s); //Obtiene longitud
+size_t	ft_strlen(const char *s);	//08-Obtiene longitud
 int		ft_isalpha(int c);			//09-Comprueba letras
 int		ft_isdigit(int c);			//10-Comprueba numeros
 int		ft_isalnum(int c);			//11-Comprueba letras y numeros
-
+int		ft_isascii(int c);			//12-Comprueba si es ascii
 /* 12 - ft_isascii - comprueba si c es un valor de carácter sin signo de 7 bits
 	que se ajusta al conjunto de caracteres ASCII. */
 
 int		ft_isprint(int c);			//13-Comprueba que sea imprimible
 int		ft_toupper(int c);			//14-Convierte a mayusculas
-int		ft_tolower(int c);				//15-Convierte a minusculas
+int		ft_tolower(int c);			//15-Convierte a minusculas
 
 /* 16 - ft_strchr - devuelve un puntero a la primera aparición del caracter c
 	en la cadena s. */
