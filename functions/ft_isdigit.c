@@ -1,43 +1,33 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 12:44:58 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/28 12:59:02 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-/*
-	devuelve un size_t y la llamo ft_strlen
-
-	size_t	ft_strlen( const char *s) //Creo una función que pide como 
-										dato un puntero a un char,
-	{	
-		size_t	x; // Declaro una variable de tipo size_t y la llamo x
-	
-		x = 0; // Guardo un 0 en la variable x	
-		while (s[x] != '\0') // Mientras la posición x del string s no sea \0
-		{
-			x++; // Sumo 1 a x
-		}
-		return (x); // Devuelvo al valor de x
-	}	
-*/
-
-size_t	ft_strlen( const char *s)
+int	ft_isdigit(int c)
 {
-	size_t	x;
-
-	x = 0;
-	while (s[x] != '\0')
-	{
-		x++;
-	}
-	return (x);
+	if (c >= '0' && c <= '9')
+		return (1);
+	else
+		return (0);
 }
+
+/*
+int	ft_isalpha(int c)
+{
+	// si c está entre 0 y 9
+	if (c >= '0' && c <= '9')
+		return (1); // Devuelve 1
+	else
+		return (0); // Devuelve 0
+}
+*/
