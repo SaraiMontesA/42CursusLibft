@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 18:08:39 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 15:41:07 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -39,12 +39,9 @@
 // #     LISTA DE LAS FUNCIONES     #
 // ##################################
 
-/* 1 - ft_memset - llena los primeros n bytes del área de memoria señalada
-	por s con el byte constante c. Devuelve un puntero al area de memoria
-	s */
-/* 2 - ft_bzero - borra n bytes de memoria escribiendo \0 en este area. */
-/* 3 - ft_memcpy - copia n bytes del área de memoria src al área de memoria dest
-	Las áreas de memoria no deben solaparse. devuelve un puntero a dest. */
+/* 01 ft_memset, establecer los valores de un bloque de memoria a un valor específico */
+/* 2 ft_bzero, borra n bytes de memoria escribiendo \0 en este area. */
+/* 3 ft_memcpy, copia n bytes del área de memoria src al área de memoria dest*/
 /* 4 - ft_memccpy - no copia más de n bytes del área de memoria src al área de
 	memoria dest, deteniéndose cuando se encuentra el carácter c. devuelve un
 	puntero al siguiente carácter en dest después de c, o NULL si no se encontró
@@ -70,9 +67,6 @@ int		ft_isalpha(int c);			//09-Comprueba letras
 int		ft_isdigit(int c);			//10-Comprueba numeros
 int		ft_isalnum(int c);			//11-Comprueba letras y numeros
 int		ft_isascii(int c);			//12-Comprueba si es ascii
-/* 12 - ft_isascii - comprueba si c es un valor de carácter sin signo de 7 bits
-	que se ajusta al conjunto de caracteres ASCII. */
-
 int		ft_isprint(int c);			//13-Comprueba que sea imprimible
 int		ft_toupper(int c);			//14-Convierte a mayusculas
 int		ft_tolower(int c);			//15-Convierte a minusculas
