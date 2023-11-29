@@ -10,7 +10,7 @@ ninguna función Cterna:
 03 - ft_memcpy		- 
 04 - ft_memccpy		- 
 05 - ft_memmove		- 
-06 - ft_memchr		- 
+06 - ft_memchr		- OK
 07 - ft_memcmp		- 
 08 - ft_strlen		- OK -C01/ex06
 09 - ft_isalpha		- OK -CO2/ex02

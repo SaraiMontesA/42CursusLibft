@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 17:16:14 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:35:45 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -56,6 +56,7 @@ void ft_bzero(void *s, size_t n);
 	si los bytes en src se copiaran primero en una matriz temporal que no se
 	superpone a src o dest, y los bytes se copian de la matriz temporal a dest.
 	devuelve un puntero a dest. */
+void *ft_memchr(const void *s, int c, size_t n);
 /* 6 - ft_memchr - escanea los n bytes iniciales del área de memoria señalada
 	por s para la primera instancia de c . Tanto c como los bytes del área de
 	memoria señalados por s se interpretan como caracteres sin signo. devuelve
