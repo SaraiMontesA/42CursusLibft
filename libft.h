@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 16:18:32 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:31:28 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -128,7 +128,7 @@ int		ft_tolower(int c);			//15-Convierte a minusculas
 	proporcionado. */
 void	ft_putchar_fd(char c, int fd); // imprime un caracter en la salidad dada
 void	ft_putstr_fd(char *c, int fd); // imprime una cadena en la salida dada
-
+void	ft_putendl_fd(char *c, int fd);
 /* 33 - ft_putendl_fd - Escribe la cadena de caracteres s sobre el file
 	descriptor proporcionado, seguida de un salto de línea. */
 void	ft_putnbr_fd(int nb, int fd); // Escribe un int nb en la salida dada
