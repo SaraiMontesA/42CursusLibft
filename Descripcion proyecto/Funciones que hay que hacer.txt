@@ -1,0 +1,67 @@
+Parte 1 Funciones de la libc
+
+Makefile		- C09/ex01
+
+Tiene que volver a programar las funciones siguientes. Estas funciones no necesitan
+ninguna función Cterna:
+
+1 - ft_memset		- 
+2 - ft_bzero		- 
+3 - ft_memcpy		- 
+4 - ft_memccpy		- 
+5 - ft_memmove		- 
+6 - ft_memchr		- 
+7 - ft_memcmp		- 
+8 - ft_strlen		- OK -C01/ex06
+9 - ft_isalpha		- OK -CO2/ex02
+10 - ft_isdigit		- OK -CO2/ex03
+11 - ft_isalnum		- OK -C02/ex02+ex03
+12 - ft_isascii		- OK -
+13 - ft_isprint		- OK -C02/ex06
+14 - ft_toupper		- OK -C02/ex07
+15 - ft_tolower		- OK -C02/EX08
+16 - ft_strchr		- 
+17 - ft_strrchr		- 
+18 - ft_strncmp		- C03/ex01
+19 - ft_strlcpy		- C02/ex10
+20 - ft_strlcat		- C03/ex05
+21 - ft_strnstr		- No existe igual (C03/ex04)
+22 - ft_atoi		- C04/ex03
+
+También tendrá volver programar estas funciones llamando a la función “malloc”:
+
+23 - calloc		- 
+24 - strdup		- CO7/ex00
+
+Parte 2 Funciones adicionales
+
+25 - ft_substr		- 
+26 - ft_strjoin		- CO7/ex03
+27 - ft_strtrim		- 
+28 - ft_split		- CO7/ex05
+29 - ft_itoa		- CO4/02
+30 - ft_strmapi		- 
+31 - ft_putchar_fd	- OK -No Existe igual (C00/ex00)
+32 - ft_putstr_fd	- No Existe igual (C01/ex05 - C04/ex01)
+33 - ft_putendl_fd	- 
+34 - ft_putnbr_fd	- No Existe igual (C00/ex07 -C04/ex02)
+
+Capítulo III Parte Ctra (manipulación de listas)
+
+Para este capítulo mirar C12, es todo listas
+
+35 - ft_lstnew		-
+36 - ft_lstadd_front	-
+37 - ft_lstsize		-
+38 - ft_lstlast		-
+39 - ft_lstadd_back	-
+40 - ft_lstdelone		-
+41 - ft_lstclear		-
+42 - ft_lstiter		-
+43 - ft_lstmap		-
+
+Puede añadir funciones a su libft a su gusto.
+
+44 Limpiar pantalla
+
+

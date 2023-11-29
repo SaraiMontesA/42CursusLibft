@@ -1,0 +1,136 @@
+C00
+C00/00: ft_putchar
+C00/01: ft_print_alphabet
+C00/02: ft_print_reverse_alphabet
+C00/03: ft_print_numbers
+C00/04: ft_is_negative
+C00/05: ft_print_comb
+C00/06: ft_print_comb2
+C00/07: ft_putnbr
+C00/08: ft_print_combn
+
+CO1
+CO1/00 : ft_ft
+CO1/01 : ft_ultimate_ft
+CO1/02 : ft_swap
+CO1/03 : ft_div_mod
+CO1/04 : ft_ultimate_div_mod
+CO1/05 : ft_putstr
+CO1/06 : ft_strlen
+CO1/07 : ft_rev_int_tab
+CO1/08 : ft_sort_int_tab
+
+CO2
+CO2/00 : ft_strcpy
+CO2/01 : ft_strncpy
+CO2/02 : ft_str_is_alpha
+CO2/03 : ft_str_is_numeric
+CO2/04 : ft_str_is_lowercase
+CO2/05 : ft_str_is_uppercase
+CO2/06 : ft_str_is_printable
+CO2/07 : ft_strupcase
+CO2/08 : ft_strlowcase
+CO2/09 : ft_strcapitalize
+CO2/10 : ft_strlcpy
+CO2/11 : ft_putstr_non_printable
+CO2/12 : ft_print_memory
+
+CO3
+CO3/00 : ft_strcmp
+CO3/01 : ft_strncmp
+CO3/02 : ft_strcat
+CO3/03 : ft_strncat
+CO3/04 : ft_strstr
+CO3/05 : ft_strlcat
+
+CO4
+CO4/00 : ft_strlen
+CO4/01 : ft_putstr
+CO4/02 : ft_putnbr
+CO4/03 : ft_atoi
+CO4/04 : ft_putnbr_base
+CO4/05 : ft_atoi_base
+
+CO5
+CO5/00 : ft_iterative_factorial
+CO5/01 : ft_recursive_factorial
+CO5/02 : ft_iterative_power
+CO5/03 : ft_recursive_power
+CO5/04 : ft_fibonacci
+CO5/05 : ft_sqrt
+CO5/06 : ft_is_prime
+CO5/07 : ft_find_next_prime
+CO5/08 : Las diez damas
+
+CO6
+CO6/00 : ft_print_program_name
+CO6/01 : ft_print_params
+CO6/02 : ft_rev_params
+CO6/03 : ft_sort_params
+
+EXO7
+CO7/00 : ft_strdup
+CO7/01 : ft_range
+CO7/02 : ft_ultimate_range
+CO7/03 : ft_strjoin
+CO7/04 : ft_convert_base
+CO7/05 : ft_split
+
+CO8
+CO8/00 : ft.h
+CO8/01 : ft_boolean.h
+CO8/02 : ft_abs.h
+CO8/03 : ft_point.h
+CO8/04 : ft_strs_to_tab
+CO8/05 : ft_show_tab
+
+CO9
+CO9/00 : libft
+CO9/01 : Makefile
+CO9/02 : ft_split
+
+C10
+C10/00 : display_file
+C10/01 : cat
+C10/02 : tail
+C10/03 : hexdump
+
+C11
+C11/00 : ft_foreach
+C11/01 : ft_map
+C11/02 : ft_any
+C11/03 : ft_count_if
+C11/04 : ft_is_sort
+C11/05 : do-op
+C11/06 : ft_sort_string_tab
+C11/07 : ft_advanced_sort_string_tab
+
+C12
+C12/00 : ft_create_elem
+C12/01 : ft_list_push_front
+C12/02 : ft_list_size
+C12/03 : ft_list_last
+C12/04 : ft_list_push_back
+C12/05 : ft_list_push_strs
+C12/06 : ft_list_clear
+C12/07 : ft_list_at
+C12/08 : ft_list_reverse
+C12/09 : ft_list_foreach
+C12/10 : ft_list_foreach_if
+C12/11 : ft_list_find
+C12/12 : ft_list_remove_if
+C12/13 : ft_list_merge
+C12/14 : ft_list_sort
+C12/15 : ft_list_reverse_fun
+C12/16 : ft_sorted_list_insert
+C12/17 : ft_sorted_list_merge
+
+C13
+C13/00 : btree_create_node
+C13/01 : btree_apply_prefix
+C13/02 : btree_apply_infix
+C13/03 : btree_apply_suffix
+C13/04 : btree_insert_data
+C13/05 : btree_search_item
+C13/06 : btree_level_count
+C13/07 : btree_apply_by_level
