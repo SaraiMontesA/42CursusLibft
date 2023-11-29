@@ -5,15 +5,15 @@ Makefile		- C09/ex01
 Tiene que volver a programar las funciones siguientes. Estas funciones no necesitan
 ninguna función Cterna:
 
-1 - ft_memset		- 
-2 - ft_bzero		- 
-3 - ft_memcpy		- 
-4 - ft_memccpy		- 
-5 - ft_memmove		- 
-6 - ft_memchr		- 
-7 - ft_memcmp		- 
-8 - ft_strlen		- OK -C01/ex06
-9 - ft_isalpha		- OK -CO2/ex02
+01 - ft_memset		- 
+02 - ft_bzero		- 
+03 - ft_memcpy		- 
+04 - ft_memccpy		- 
+05 - ft_memmove		- 
+06 - ft_memchr		- 
+07 - ft_memcmp		- 
+08 - ft_strlen		- OK -C01/ex06
+09 - ft_isalpha		- OK -CO2/ex02
 10 - ft_isdigit		- OK -CO2/ex03
 11 - ft_isalnum		- OK -C02/ex02+ex03
 12 - ft_isascii		- OK -
@@ -42,7 +42,7 @@ Parte 2 Funciones adicionales
 29 - ft_itoa		- CO4/02
 30 - ft_strmapi		- 
 31 - ft_putchar_fd	- OK -No Existe igual (C00/ex00)
-32 - ft_putstr_fd	- No Existe igual (C01/ex05 - C04/ex01)
+32 - ft_putstr_fd	- OK -No Existe igual (C01/ex05 - C04/ex01)
 33 - ft_putendl_fd	- 
 34 - ft_putnbr_fd	- No Existe igual (C00/ex07 -C04/ex02)
 
