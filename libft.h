@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 20:32:46 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:17:11 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -121,8 +121,8 @@ int		ft_tolower(int c);			//15-Convierte a minusculas
 	NULL si falla la reserva de memoria. */
 /* 29 - ft_itoa - Reserva memoria (con malloc(3)) para la cadena de caracteres
 	que va a devolver, que representa el integer pasado como argumento. Se deben
-	gestionar los números negativos. Retorna la cadena de caracteres que representa
-	al integer. NULL si falla la reserva de memoria. */
+	gestionar los números negativos. Retorna la cadena de caracteres que
+	representa al integer. NULL si falla la reserva de memoria. */
 /* 30 - ft_strmapi - Aplica la función f a cada carácter de la de cadena de
 	caracteres pasada como argumento para crear una nueva cadena de caracteres
 	(con malloc (3)) que resulte de las aplicaciones sucesivas de f.
