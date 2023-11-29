@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 16:31:28 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 17:09:54 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -42,6 +42,7 @@
 // #     LISTA DE LAS FUNCIONES     #
 // ##################################
 
+void *ft_memset(void *s, int c, size_t n);
 /* 01 ft_memset, establecer los valores de un bloque de memoria a un valor específico */
 /* 2 ft_bzero, borra n bytes de memoria escribiendo \0 en este area. */
 /* 3 ft_memcpy, copia n bytes del área de memoria src al área de memoria dest*/

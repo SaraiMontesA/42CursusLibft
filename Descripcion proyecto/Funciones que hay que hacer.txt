@@ -5,7 +5,7 @@ Makefile		- C09/ex01
 Tiene que volver a programar las funciones siguientes. Estas funciones no necesitan
 ninguna función Cterna:
 
-01 - ft_memset		- 
+01 - ft_memset		- OK
 02 - ft_bzero		- 
 03 - ft_memcpy		- 
 04 - ft_memccpy		- 
