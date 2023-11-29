@@ -6,7 +6,7 @@ Tiene que volver a programar las funciones siguientes. Estas funciones no necesi
 ninguna función Cterna:
 
 01 - ft_memset		- OK
-02 - ft_bzero		- 
+02 - ft_bzero		- OK
 03 - ft_memcpy		- 
 04 - ft_memccpy		- 
 05 - ft_memmove		- 
