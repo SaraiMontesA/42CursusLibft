@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 17:35:45 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:32:46 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -36,15 +36,16 @@
 # include <string.h>
 
 /* Incluye informacion sobre los limites de los datos*/
-#include <limits.h>
+# include <limits.h>
 
 // ##################################
 // #     LISTA DE LAS FUNCIONES     #
 // ##################################
 
-void *ft_memset(void *s, int c, size_t n);
-/* 01 ft_memset, establecer los valores de un bloque de memoria a un valor específico */
-void ft_bzero(void *s, size_t n);
+void	*ft_memset(void *s, int c, size_t n);
+/* 01 ft_memset, establecer los valores de
+un bloque de memoria a un valor específico */
+void	ft_bzero(void *s, size_t n);
 /* 2 ft_bzero, borra n bytes de memoria escribiendo \0 en este area. */
 /* 3 ft_memcpy, copia n bytes del área de memoria src al área de memoria dest*/
 /* 4 - ft_memccpy - no copia más de n bytes del área de memoria src al área de
@@ -56,7 +57,7 @@ void ft_bzero(void *s, size_t n);
 	si los bytes en src se copiaran primero en una matriz temporal que no se
 	superpone a src o dest, y los bytes se copian de la matriz temporal a dest.
 	devuelve un puntero a dest. */
-void *ft_memchr(const void *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 /* 6 - ft_memchr - escanea los n bytes iniciales del área de memoria señalada
 	por s para la primera instancia de c . Tanto c como los bytes del área de
 	memoria señalados por s se interpretan como caracteres sin signo. devuelve

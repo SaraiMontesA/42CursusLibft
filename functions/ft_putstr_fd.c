@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 16:07:47 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:46:38 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,15 +15,27 @@
 
 void	ft_putstr_fd(char *c, int fd)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	if (c)
 	{
 		while (c[i] != '\0')
 		{
 			write(fd, &c[i], 1);
-			i++;	
-		}		
+			i++;
+		}
 	}
 }
+
+/*
+La función putstr_fd no es una función estándar en el lenguaje de
+programación C.
+
+Puede ser una función específica de alguna biblioteca o entorno de
+desarrollo particular.
+
+Si necesitas imprimir una cadena seguida de un salto de línea en
+un descriptor de archivo específico (como un archivo o un socket),
+puedes crear tu propia función para lograrlo.
+*/

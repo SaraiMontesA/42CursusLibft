@@ -3,22 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 17:13:52 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:42:25 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-void *ft_memset(void *s, int c, size_t n)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t i;
-	
-	i = 0;
+	size_t	i;
 
+	i = 0;
 	while (i < n)
 	{
 		((unsigned char *)s)[i] = (unsigned char)c;

@@ -3,15 +3,27 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/28 18:02:49 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:41:46 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
+
+size_t	ft_strlen( const char *s)
+{
+	size_t	x;
+
+	x = 0;
+	while (s[x] != '\0')
+	{
+		x++;
+	}
+	return (x);
+}
 
 /*
 	devuelve un size_t y la llamo ft_strlen
@@ -29,15 +41,3 @@
 		return (x); // Devuelvo al valor de x
 	}	
 */
-
-size_t	ft_strlen( const char *s)
-{
-	size_t	x;
-
-	x = 0;
-	while (s[x] != '\0')
-	{
-		x++;
-	}
-	return (x);
-}

@@ -3,30 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 17:42:15 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:42:09 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char *pointer;
-	
-	size_t i;
-	
+	const unsigned char	*pointer;
+	size_t				i;
+
 	i = 0;
 	pointer = (unsigned char *)(s);
-
 	while (n > i)
 	{
 		if (pointer[i] == ((unsigned char)c))
 		{
-			return((void *)&pointer[i]);
+			return ((void *)&pointer[i]);
 		}
 		i++;
 	}

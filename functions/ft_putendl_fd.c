@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 16:31:12 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:48:58 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,16 +15,29 @@
 
 void	ft_putendl_fd(char *c, int fd)
 {
-	int i;
-	
+	int	i;
+
 	i = 0;
 	if (c)
 	{
 		while (c[i] != '\0')
 		{
 			write(fd, &c[i], 1);
-			i++;	
+			i++;
 		}
-		write(fd, "\n", 1);	
+		write(fd, "\n", 1);
 	}
 }
+
+/*
+La función putendl_fd no es una función estándar en el lenguaje de
+programación C.
+
+Es posible que sea una función específica de alguna biblioteca o entorno
+de desarrollo particular.
+
+Sin embargo, si estás pensando en una función que imprima una cadena
+seguida de un salto de línea en un descriptor de archivo específico
+(como un archivo o un socket), puedes lograr esto utilizando la 
+función write junto con strlen para obtener la longitud de la cadena.
+*/
