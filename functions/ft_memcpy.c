@@ -6,33 +6,32 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 22:17:38 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:42:49 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-void	*ft_memcpy(const void *s, int c, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	const unsigned char	*pointer;
 	size_t				i;
+	const unsigned char	*src2;
+	unsigned char		*dest2;
 
 	i = 0;
-	pointer = (unsigned char *)(s);
-	while (n > i)
+	src2 = src;
+	dest2 = dest;
+	while (i < n)
 	{
-		if (pointer[i] == ((unsigned char)c))
-		{
-			return ((void *)&pointer[i]);
-		}
+		dest2[i] = src2[i];
 		i++;
 	}
-	return (NULL);
+	return (dest);
 }
 
 /*
-La función memcpyes una función en el lenguaje de programación C que se
+La función memcpy es una función en el lenguaje de programación C que se
 utiliza para copiar un bloque de memoria desde una ubicación fuente a una
 ubicación de destino. 
 
