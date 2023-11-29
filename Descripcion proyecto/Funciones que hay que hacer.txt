@@ -44,7 +44,7 @@ Parte 2 Funciones adicionales
 31 - ft_putchar_fd	- OK -No Existe igual (C00/ex00)
 32 - ft_putstr_fd	- OK -No Existe igual (C01/ex05 - C04/ex01)
 33 - ft_putendl_fd	- 
-34 - ft_putnbr_fd	- No Existe igual (C00/ex07 -C04/ex02)
+34 - ft_putnbr_fd	- OK -No Existe igual (C00/ex07 -C04/ex02)
 
 Capítulo III Parte Ctra (manipulación de listas)
 

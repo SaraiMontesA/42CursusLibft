@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 16:08:33 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/29 16:18:32 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -34,6 +34,9 @@
 /* Proporciona prototipos de funciones para
 	manipular cadenas de caracteres */
 # include <string.h>
+
+/* Incluye informacion sobre los limites de los datos*/
+#include <limits.h>
 
 // ##################################
 // #     LISTA DE LAS FUNCIONES     #
@@ -125,10 +128,10 @@ int		ft_tolower(int c);			//15-Convierte a minusculas
 	proporcionado. */
 void	ft_putchar_fd(char c, int fd); // imprime un caracter en la salidad dada
 void	ft_putstr_fd(char *c, int fd); // imprime una cadena en la salida dada
-/* 32 - ft_putstr_fd - Escribe la cadena de caracteres c sobre el descriptor de
-	fichero proporcionado. */
+
 /* 33 - ft_putendl_fd - Escribe la cadena de caracteres s sobre el file
 	descriptor proporcionado, seguida de un salto de línea. */
+void	ft_putnbr_fd(int nb, int fd); // Escribe un int nb en la salida dada
 /* 34 - ft_putnbr_fd - Escribe el entero n sobre el file descriptor
 	proporcionado. */
 /* 35 - ft_lstnew - Reserva memoria (con malloc(3)) para un nuevo elemento que
