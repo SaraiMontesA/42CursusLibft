@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 21:26:19 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 22:35:54 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -75,7 +75,6 @@ size_t	ft_strlcpy(char *dest, char *src, long unsigned int len);
 		resultado. devuelve la longitud total de la cadena que intentaron crear
 			(longitud src + dst). */
 //==========> FALTA <==========
-
 int		ft_toupper(int c);			//13-Convierte a mayusculas
 int		ft_tolower(int c);			//14-Convierte a minusculas
 /* 15 - ft_strchr - devuelve un puntero a la primera aparición del caracter c
