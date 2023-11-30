@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 01:27:56 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 22:59:57 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,51 +15,30 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
-	size_t			i;
 	unsigned char	*src2;
-	unsigned char	*temp;
 	unsigned char	*dest2;
 
 	if (!dest && !src)
 		return (NULL);
-	i = 0;
 	src2 = (unsigned char *)src;
 	dest2 = (unsigned char *)dest;
-	temp = (unsigned char *)dest;
-	while (i < len)
+
+	if (src2 < dest2 && dest2 < src2 + len)
 	{
-		temp[i] = src2[i];
-		i++;
+		while (len--)
+		{
+			dest2[len] = src2[len];
+		}
 	}
-	i = 0;
-	while (i < len)
+	else
 	{
-		dest2[i] = temp[i];
-		len--;
+		while (len--)
+		{
+			*(dest2++) = *(src2++);
+		}
 	}
 	return (dest);
 }
-
-/*
-void	*ft_memmove(void *dst, const void *src, size_t len)
-{
-	unsigned char	*dst_temp;
-	unsigned char	*src_temp;
-
-	if (!dst && !src)
-		return (NULL);
-	dst_temp = (unsigned char *)dst;
-	src_temp = (unsigned char *)src;
-	if (src_temp < dst_temp && dst_temp < src_temp + len)
-		while (len--)
-			dst_temp[len] = src_temp[len];
-	else
-		while (len--)
-			*(dst_temp++) = *(src_temp++);
-	return (dst);
-}
-*/
-
 
 /*
 La función memmove es una función en el lenguaje de programación C que se
