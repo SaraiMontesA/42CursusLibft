@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 23:34:18 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 23:35:53 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -68,7 +68,7 @@ int		ft_isprint(int c);
 // 06-Obtiene longitud de una cadena
 size_t	ft_strlen(const char *s);
 
-// 07-Establece los valores de un bloque de memoria a un valor específico
+// 07-Establece los valores de un bloque de memoria a un valor específico (c)
 void	*ft_memset(void *s, int c, size_t n);
 
 // 08-Borra n bytes de memoria escribiendo \0 en este area
@@ -80,7 +80,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 // 10-Copia n bytes de un area de memoria a otra, que pueden superponerse
 void	*ft_memmove(void *dest, const void *src, size_t len);
 
-//11-Copia de src a dest hasta n y añade \n. Devuelve longitud total
+//11-Copia de src a dest hasta n y añade \n. Devuelve la longitud total
 size_t	ft_strlcpy(char *dest, char *src, long unsigned int len);
 
 /* 12 - ft_strlcat - agrega la cadena src terminada en NUL al final de dst.

@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 20:50:46 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 23:39:14 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -31,18 +31,32 @@ void	*ft_strlcat(void *dest, const void *src, size_t n)
 }
 
 /*
-La función memcpy es una función en el lenguaje de programación C que se
-utiliza para copiar un bloque de memoria desde una ubicación fuente a una
-ubicación de destino. 
+La función strlcates una función que se utiliza para concatenar cadenas de
+manera segura en el lenguaje de programación C.
 
-dest: Puntero a la ubicación de memoria de destino.
+A diferencia de strcat, strlcatincluye un tamaño máximo y verifica que la
+concatenación no exceda ese tamaño para evitar desbordamientos de búfer.
 
-src: Puntero a la ubicación de memoria fuente.
+Esta función es especialmente útil para prevenir vulnerabilidades de
+desbordamiento de búfer.
 
-n: Número de bytes a copiar.
+dest: Puntero a la cadena de destino donde se realizará la concatenación.
 
-La función memcpycopia los primeros nbytes desde la ubicación de la memoria
-fuente ( src) a la ubicación de la memoria de destino ( dest).
+src: Puntero a la cadena fuente que se concatenará a la cadena de destino.
 
-Devuelve un puntero a la ubicación de memoria de destino.
+size: Tamaño máximo del búfer de destino, incluido el espacio disponible
+para la cadena de destino.
+
+La función strlcatconcatena la cadena srca la cadena dest, asegurándose de
+que el tamaño total del resultado no exceda size - 1para dejar espacio para
+el carácter nulo de terminación.
+
+Devuelve la longitud total de la cadena que se habría creado si no hubiera
+restricciones de tamaño.
+
+Importante destacar que strlcatno finaliza el resultado si el tamaño es cero.
+
+Por lo tanto, se debe garantizar que el búfer de destino sea lo
+suficientemente grande para acomodar los datos concatenados y el carácter
+nulo de terminación.
 */
