@@ -1,67 +1,69 @@
-Parte 1 Funciones de la libc
+// #############################################################################
+// #     LISTA DE LAS FUNCIONES                                                #
+// #############################################################################
 
-Makefile		- C09/ex01
+// #############################################################################
+// # Parte 1: Funciones que no requieren funciones autorizadas          12/21  #
+// #############################################################################
 
-Tiene que volver a programar las funciones siguientes. Estas funciones no necesitan
-ninguna función Cterna:
+//01 - ft_isalpha		OK
+//02 - ft_isdigit		OK
+//03 - ft_isalnum		OK
+//04 - ft_isascii		OK
+//05 - ft_isprint		OK
+//06 - ft_strlen		OK
+//07 - ft_memset		OK
+//08 - ft_bzero			OK
+//09 - ft_memcpy		OK
+//10 - ft_memmove		OK
+//11 - ft_strlcpy		//==========> FALTA <==========	- C02/ex10
+//12 - ft_strlcat		//==========> FALTA <========== - C03/ex05
+//13 - ft_toupper		OK
+//14 - ft_tolower		OK
+//15 - ft_strchr		//==========> FALTA <==========
+//16 - ft_strrchr		//==========> FALTA <==========
+//17 - ft_strncmp		//==========> FALTA <==========	- C03/ex01
+//18 - ft_memchr		//==========> ERROR <==========
+//19 - ft_memcmp		//==========> FALTA <==========
+//20 - ft_strnstr		//==========> FALTA <==========	- No existe igual (C03/ex04)
+//21 - ft_atoi			//==========> FALTA <==========	- C04/ex03
 
-01 - ft_memset		- OK
-02 - ft_bzero		- OK
-03 - ft_memcpy		- 
-04 - ft_memccpy		- 
-05 - ft_memmove		- 
-06 - ft_memchr		- OK
-07 - ft_memcmp		- 
-08 - ft_strlen		- OK -C01/ex06
-09 - ft_isalpha		- OK -CO2/ex02
-10 - ft_isdigit		- OK -CO2/ex03
-11 - ft_isalnum		- OK -C02/ex02+ex03
-12 - ft_isascii		- OK -
-13 - ft_isprint		- OK -C02/ex06
-14 - ft_toupper		- OK -C02/ex07
-15 - ft_tolower		- OK -C02/EX08
-16 - ft_strchr		- 
-17 - ft_strrchr		- 
-18 - ft_strncmp		- C03/ex01
-19 - ft_strlcpy		- C02/ex10
-20 - ft_strlcat		- C03/ex05
-21 - ft_strnstr		- No existe igual (C03/ex04)
-22 - ft_atoi		- C04/ex03
+// #############################################################################
+// # Parte 1: Funciones que utilizan malloc                               0/2  #
+// #############################################################################
 
-También tendrá volver programar estas funciones llamando a la función “malloc”:
+//22 - calloc			//==========> FALTA <==========
+//23 - strdup			//==========> FALTA <==========	- CO7/ex00
 
-23 - calloc		- 
-24 - strdup		- CO7/ex00
+// #############################################################################
+// # Parte 2: Funciones adicionales                                      4/12  #
+// #############################################################################
 
-Parte 2 Funciones adicionales
+//24 - ft_substr		//==========> FALTA <==========
+//25 - ft_strjoin		//==========> FALTA <==========	- CO7/ex03
+//26 - ft_strtrim		//==========> FALTA <==========
+//27 - ft_split			//==========> FALTA <==========	- CO7/ex05
+//28 - ft_itoa			//==========> FALTA <==========	- CO4/02
+//29 - ft_strmapi		//==========> FALTA <==========
+//30 - ft_striteri		//==========> FALTA <==========
+//31 -	ft_putchar_fd	OK
+//32 - ft_putstr_fd		OK
+//33 - ft_putendl_fd	OK
+//34 - ft_putnbr_fd		OK
 
-25 - ft_substr		- 
-26 - ft_strjoin		- CO7/ex03
-27 - ft_strtrim		- 
-28 - ft_split		- CO7/ex05
-29 - ft_itoa		- CO4/02
-30 - ft_strmapi		- 
-31 - ft_putchar_fd	- OK -No Existe igual (C00/ex00)
-32 - ft_putstr_fd	- OK -No Existe igual (C01/ex05 - C04/ex01)
-33 - ft_putendl_fd	- OK
-34 - ft_putnbr_fd	- OK -No Existe igual (C00/ex07 -C04/ex02)
+// #############################################################################
+// # Parte Bonus - Para este capítulo mirar C12, es todo listas           0/9  #
+// #############################################################################
 
-Capítulo III Parte Ctra (manipulación de listas)
+//35 - ft_lstnew		//==========> FALTA <==========
+//36 - ft_lstadd_front	//==========> FALTA <==========
+//37 - ft_lstsize		//==========> FALTA <==========
+//38 - ft_lstlast		//==========> FALTA <==========
+//39 - ft_lstadd_back	//==========> FALTA <==========
+//40 - ft_lstdelone		//==========> FALTA <==========
+//41 - ft_lstclear		//==========> FALTA <==========
+//42 - ft_lstiter		//==========> FALTA <==========
+//43 - ft_lstmap		//==========> FALTA <==========
 
-Para este capítulo mirar C12, es todo listas
-
-35 - ft_lstnew		-
-36 - ft_lstadd_front	-
-37 - ft_lstsize		-
-38 - ft_lstlast		-
-39 - ft_lstadd_back	-
-40 - ft_lstdelone		-
-41 - ft_lstclear		-
-42 - ft_lstiter		-
-43 - ft_lstmap		-
-
-Puede añadir funciones a su libft a su gusto.
-
-44 Limpiar pantalla
-
-
+//MIAS
+//44 Limpiar pantalla
