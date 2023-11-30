@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 10:38:08 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 10:44:46 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -166,40 +166,40 @@ void	*ft_memchr(const void *s, int c, size_t n);	//==========> ERROR <==========
 	dando como parámetros el índice de cada carácter dentro de ’s’ y la dirección
 	del propio carácter, que podrá modificarse si es necesario. */
 //==========> FALTA <==========
-void	ft_putchar_fd(char c, int fd); // 32-imprime un char en la salidad dada
-void	ft_putstr_fd(char *c, int fd); //33-imprime una cadena en la salida dada
-void	ft_putendl_fd(char *c, int fd); //34-imprime cadena+\n en la salida dada
-void	ft_putnbr_fd(int nb, int fd); // 35-Escribe un int nb en la salida dada
+void	ft_putchar_fd(char c, int fd); // 31-imprime un char en la salidad dada
+void	ft_putstr_fd(char *c, int fd); //32-imprime una cadena en la salida dada
+void	ft_putendl_fd(char *c, int fd); //33-imprime cadena+\n en la salida dada
+void	ft_putnbr_fd(int nb, int fd); // 34-Escribe un int nb en la salida dada
 
 // #############################################################################
 // # Parte Bonus                                                          0/9  #
 // #############################################################################
 
-/* 32 - ft_lstnew - Reserva memoria (con malloc(3)) para un nuevo elemento que
+/* 35 - ft_lstnew - Reserva memoria (con malloc(3)) para un nuevo elemento que
 	devuelve. La variable content se inicializa mediante el valor del parámetro
 	content. La variable next se inicializa con NULL. Retorna El contenido del
 	nuevo elemento. */
 //==========> FALTA <==========
-/* 33 - ft_lstadd_front - Añade el elemento new al principio de la lista */
+/* 36 - ft_lstadd_front - Añade el elemento new al principio de la lista */
 //==========> FALTA <==========
-/* 34 - ft_lstsize - Cuenta el número de elementos de la lista. */
+/* 37 - ft_lstsize - Cuenta el número de elementos de la lista. */
 //==========> FALTA <==========
-/* 35 - ft_lstlast - Devuelve el último elemento de la lista. */
+/* 38 - ft_lstlast - Devuelve el último elemento de la lista. */
 //==========> FALTA <==========
-/* 36 - ft_lstadd_back - Añade el elemento new al final de la lista */
+/* 39 - ft_lstadd_back - Añade el elemento new al final de la lista */
 //==========> FALTA <==========
-/* 37 - ft_lstdelone - Libera la memoria del elemento pasado como argumento
+/* 40 - ft_lstdelone - Libera la memoria del elemento pasado como argumento
 	utilizando la función del y después free(3). No se debe liberar la memoria
 	de "next". A continuación, el puntero al elemento debe pasar a NULL */
 //==========> FALTA <==========
-/* 38 - ft_lstclear - Suprime y libera la memoria del elemento pasado como
+/* 41 - ft_lstclear - Suprime y libera la memoria del elemento pasado como
 	parámetro y de todos los elementos siguientes, con del y free (3) Por último,
 	el puntero inicial debe pasar a NULL. */
 //==========> FALTA <==========
-/* 39 - ft_lstiter - Realiza una iteración sobre la lista lst y aplica la
+/* 42 - ft_lstiter - Realiza una iteración sobre la lista lst y aplica la
 	función f al contenido de cada elemento. */
 //==========> FALTA <==========
-/* 40 - ft_lstmap - Realiza una iteración sobre la lista lst y aplica la
+/* 43 - ft_lstmap - Realiza una iteración sobre la lista lst y aplica la
 	función f al contenido de cada elemento. Crea una nueva lista que resulta
 	de las aplicaciones sucesivas de f. Disponemos de la función del si hay que
 	elminar el contenido de algún elemento. */
