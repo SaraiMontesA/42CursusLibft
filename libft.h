@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 12:30:12 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 21:26:19 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -68,7 +68,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 //10-Copia n bytes de un area de memoria a otra, que pueden superponerse
 void	*ft_memmove(void *dest, const void *src, size_t len);
 //11-Copia de src a dest hasta n y añade \n. Devuelve longitud total
-size_t ft_strlcpy(char *dest, char *src, long unsigned int len);
+size_t	ft_strlcpy(char *dest, char *src, long unsigned int len);
 
 /* 12 - ft_strlcat - agrega la cadena src terminada en NUL al final de dst.
 	Agregará como máximo tamaño - strlen (dst) - 1 bytes, terminando en NUL el
@@ -87,7 +87,7 @@ int		ft_tolower(int c);			//14-Convierte a minusculas
 /* 17 - ft_strncmp - compara dos cadenas pasadas como parametro n bytes como
 	maximo, retorna la diferencia entre los dos primeros caracteres diferentes
 		encontrados. */
-//==========> FALTA <==========
+int	ft_strncmp(const char *s1, const char *s2, size_t n); //==========> ESTOY AQUI <==========
 /* 18 - ft_memchr - escanea los n bytes iniciales del área de memoria señalada
 	por s para la primera instancia de c . Tanto c como los bytes del área de
 	memoria señalados por s se interpretan como caracteres sin signo. devuelve
