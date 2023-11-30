@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 10:44:46 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/11/30 12:30:12 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -67,12 +67,9 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 //10-Copia n bytes de un area de memoria a otra, que pueden superponerse
 void	*ft_memmove(void *dest, const void *src, size_t len);
-//11-
+//11-Copia de src a dest hasta n y añade \n. Devuelve longitud total
+size_t ft_strlcpy(char *dest, char *src, long unsigned int len);
 
-/* 11 - ft_strlcpy - copia hasta tamaño - 1 caracteres de la cadena terminada
-	en NUL src a dst , terminando en NUL el resultado. devuelve la longitud total
-		de la cadena que intentaron crear (longitud src). */
-//==========> FALTA <==========
 /* 12 - ft_strlcat - agrega la cadena src terminada en NUL al final de dst.
 	Agregará como máximo tamaño - strlen (dst) - 1 bytes, terminando en NUL el
 		resultado. devuelve la longitud total de la cadena que intentaron crear

@@ -16,7 +16,7 @@
 //08 - ft_bzero			OK
 //09 - ft_memcpy		OK
 //10 - ft_memmove		OK
-//11 - ft_strlcpy		//==========> FALTA <==========	- C02/ex10
+//11 - ft_strlcpy		OK
 //12 - ft_strlcat		//==========> FALTA <========== - C03/ex05
 //13 - ft_toupper		OK
 //14 - ft_tolower		OK
