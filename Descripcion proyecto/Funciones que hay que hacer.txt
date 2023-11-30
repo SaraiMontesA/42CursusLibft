@@ -22,7 +22,7 @@
 //14 - ft_tolower		OK
 //15 - ft_strchr		//==========> FALTA <==========
 //16 - ft_strrchr		//==========> FALTA <==========
-//17 - ft_strncmp		//==========> FALTA <==========	- C03/ex01
+//17 - ft_strncmp		//==========> FALTA <==========	- C 03/ex01
 //18 - ft_memchr		//==========> ERROR <==========
 //19 - ft_memcmp		//==========> FALTA <==========
 //20 - ft_strnstr		//==========> FALTA <==========	- No existe igual (C03/ex04)
