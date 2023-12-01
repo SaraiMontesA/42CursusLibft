@@ -3,44 +3,51 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 10:32:51 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 00:30:10 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-void	*ft_memcmp(const void *s, int c, size_t n)
+//void	*ft_memcpy(void *dest, const void *src, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	const unsigned char	*pointer;
-	size_t				i;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
-	i = 0;
-	pointer = (unsigned char *)(s);
-	while (n > i)
+	str1 = (unsigned char *) s1;
+	str2 = (unsigned char *) s2;
+	while (n > 0)
 	{
-		if (pointer[i] == ((unsigned char)c))
-		{
-			return ((void *)&pointer[i]);
-		}
-		i++;
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
+		n--;
 	}
-	return (NULL);
+	return (0);
 }
 
 /*
-s: Puntero a la memoria donde se realizará la búsqueda.
+La función memcmp es una función en el lenguaje de programación C que
+se utiliza para comparar dos bloques de memoria byte a byte.
 
-c: Valor entero que se está buscando.
+int memcmp(const void *s1, const void *s2, size_t n);
 
-n: Número de bytes a buscar.
+s1: Puntero al primer bloque de memoria.
 
-La función memchr busca el byte con el valor c
-dentro de los primeros nbytes de la memoria apuntada por s.
+s2: Puntero al segundo bloque de memoria.
 
-Devuelve un puntero al primer byte encontrado o 
-NULL si el byte no está presente en los primeros nbytes. 
+n: Número de bytes a comparar.
+
+La función memcmpcompara los primeros nbytes de los bloques de memoria
+apuntados por s1y s2.
+
+Devuelve un valor entero menor que, igual a, o mayor que cero si el
+bloque de memoria apuntado por s1es menor que, igual a, o mayor que
+el bloque de memoria apuntado por s2. 
 */

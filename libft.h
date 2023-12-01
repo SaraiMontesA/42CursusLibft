@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 23:52:55 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 00:23:00 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -111,7 +111,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 	entero menor que, igual o mayor que cero si se encuentra que los primeros n
 	bytes de s1 , respectivamente, son menores, coinciden o son mayores que los
 	primeros n bytes de s2. 												  */
-//==========> FALTA <==========
+int		ft_memcmp(const void *s1, const void *s2, size_t n); //==========> ERROR <==========
 
 /* 20 - ft_strnstr - busca la cadena needle en la otra haystack durante un
 	tamaño 	maximo len. Retorna haystack desde que se encontro lo similitud.  */
