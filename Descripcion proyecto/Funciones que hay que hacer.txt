@@ -3,7 +3,7 @@
 // #############################################################################
 
 // #############################################################################
-// # Parte 1: Funciones que no requieren funciones autorizadas          12/21  #
+// # Parte 1: Funciones que no requieren funciones autorizadas          18/21  #
 // #############################################################################
 
 //01 - ft_isalpha		OK
@@ -46,7 +46,7 @@
 //28 - ft_itoa			//==========> FALTA <==========	- CO4/02
 //29 - ft_strmapi		//==========> FALTA <==========
 //30 - ft_striteri		//==========> FALTA <==========
-//31 -	ft_putchar_fd	OK
+//31 - ft_putchar_fd	OK
 //32 - ft_putstr_fd		OK
 //33 - ft_putendl_fd	OK
 //34 - ft_putnbr_fd		OK
