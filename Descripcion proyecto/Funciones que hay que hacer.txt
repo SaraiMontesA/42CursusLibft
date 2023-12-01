@@ -24,7 +24,7 @@
 //16 - ft_strrchr		OK
 //17 - ft_strncmp		OK
 //18 - ft_memchr		OK
-//19 - ft_memcmp		//==========> FALTA <==========
+//19 - ft_memcmp		OK
 //20 - ft_strnstr		//==========> FALTA <==========	- No existe igual (C03/ex04)
 //21 - ft_atoi			//==========> FALTA <==========	- C04/ex03
 
