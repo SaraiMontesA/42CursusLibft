@@ -1,12 +1,12 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 12:19:10 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 12:41:17 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -16,24 +16,61 @@
 /* 15 - ft_strchr - devuelve un puntero a la primera aparición del caracter c
 	en la cadena s. 														  */
 
-char	*ft_strchr(const char *s, int c)
+
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	i;
+	int		len;
 	char	*str1;
 	char	char_c;
 
-	i = 0;
+	len = ft_strlen(s);
 	str1 = (char *)s;
 	char_c = c;
 	
-	while (str1[i] != char_c)
+	if (c == '\0')
+		return(str1 + len);
+	
+	while (len >= 0)
 	{
-		if (str1[i] == '\0')
-			return (NULL);
+		if (str1[len] == char_c)
+			return(str1 + len);
+		len--;		
+	}
+	if (s[0] == char_c)
+		return (str1);
+	return (0);
+}
+
+/*
+char	*ft_strrchr(const char *s, int c)
+{
+	int	i;
+	char	*str1;
+	char	char_c;
+	char	*result;
+			
+	i = 0;
+	str1 = (char *)s;
+	char_c = c;
+	result = NULL;
+	
+	if (c == '\0')
+		return(str1 + i);
+	
+	while (str1[i] != '\0')
+	{
+		if (str1[i] == char_c)
+			result = str1 + i;
 		i++;		
 	}
-	return ((char *)str1 + i);
+
+	if (result != 0)
+			return (result);
+	
+	return (0);
 }
+*/
+
 
 /*
 La función strchr es una función en el lenguaje de programación C que se

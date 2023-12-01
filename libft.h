@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 11:46:15 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 12:43:13 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -93,13 +93,11 @@ int		ft_toupper(int c);
 // 14-Convierte a minusculas												   /
 int		ft_tolower(int c);
 
-// 15 - ft_strchr - devuelve un puntero a la primera aparición del char c	   /
-	//en la cadena s. 														   /
+// 15-Devuelve un puntero a la primera aparición del char c	en la cadena s	   /
 char	*ft_strchr(const char *s, int c);
 
-/* 16 - ft_strrchr - devuelve un puntero a la última aparición del caracter c
-	en la cadena s. 														  */
-//==========> FALTA <==========
+// 16-Devuelve un puntero a la última aparición del char c en la cadena s.	   /
+char	*ft_strrchr(const char *s, int c);
 
 /* 17-Compara 2 cadenas pasadas como parametro n bytes como maximo, retorna
 	la diferencia entre los 2 primeros caracteres diferentes encontrados.	  */
