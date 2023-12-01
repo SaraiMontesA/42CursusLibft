@@ -3,34 +3,33 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 12:28:28 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 23:56:00 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-size_t ft_strlcpy(char *dest, char *src, size_t len)
+size_t	ft_strlcpy(char *dest, char *src, size_t len)
 {
 	size_t	i;
 	size_t	count;
 
 	i = 0;
 	count = ft_strlen(src);
-
 	if (len > 0)
 	{
 		while (src[i] && i < len - 1)
 		{
-			dest[i] = src[i];//copias
+			dest[i] = src[i];
 			i++;
 		}
-		dest[i] = '\0';//pones \0 al final
+		dest[i] = '\0';
 	}
-	return (count); //devuelve la longitud total menos el nulo terminador
+	return (count);
 }
 
 /*

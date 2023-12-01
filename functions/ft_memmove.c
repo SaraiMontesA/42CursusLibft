@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 22:59:57 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 23:51:02 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -22,7 +22,6 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		return (NULL);
 	src2 = (unsigned char *)src;
 	dest2 = (unsigned char *)dest;
-
 	if (src2 < dest2 && dest2 < src2 + len)
 	{
 		while (len--)

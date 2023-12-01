@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 12:43:13 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 23:52:55 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -44,7 +44,6 @@
 // #############################################################################
 // #     LISTA DE LAS FUNCIONES                                                #
 // #############################################################################
-
 
 // #############################################################################
 // # Parte 1: Funciones que no requieren funciones autorizadas          12/21  #
@@ -101,14 +100,14 @@ char	*ft_strrchr(const char *s, int c);
 
 /* 17-Compara 2 cadenas pasadas como parametro n bytes como maximo, retorna
 	la diferencia entre los 2 primeros caracteres diferentes encontrados.	  */
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /* 18-Busca el valor c en los nbytes de la cadena s, devuelve puntero al byte
 	encontrado o NULL si no lo encuentra									  */
 void	*ft_memchr(const void *s, int c, size_t n);
 
 /* 19 - ft_memcmp - compara los primeros n bytes (cada uno interpretado como un
-	carácter sin signo ) de las áreas de memoria s1 y s2. evuelve un número
+	carácter sin signo ) de las áreas de memoria s1 y s2. Devuelve un número
 	entero menor que, igual o mayor que cero si se encuentra que los primeros n
 	bytes de s1 , respectivamente, son menores, coinciden o son mayores que los
 	primeros n bytes de s2. 												  */

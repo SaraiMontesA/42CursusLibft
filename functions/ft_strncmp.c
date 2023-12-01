@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/30 22:35:24 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 23:51:25 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -24,7 +24,6 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	str2 = (unsigned char *) s2;
 	while ((i < n - 1) && str1[i] && str2[i] && str1[i] == str2[i])
 		i++;
-
 	if (n > 0)
 		return (str1[i] - str2[i]);
 	else

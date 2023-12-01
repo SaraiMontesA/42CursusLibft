@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 12:19:10 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 23:54:26 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -25,12 +25,11 @@ char	*ft_strchr(const char *s, int c)
 	i = 0;
 	str1 = (char *)s;
 	char_c = c;
-	
 	while (str1[i] != char_c)
 	{
 		if (str1[i] == '\0')
 			return (NULL);
-		i++;		
+		i++;
 	}
 	return ((char *)str1 + i);
 }
