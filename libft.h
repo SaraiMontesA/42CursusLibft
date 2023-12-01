@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 11:16:31 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 11:46:15 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -84,7 +84,7 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 size_t	ft_strlcpy(char *dest, char *src, long unsigned int len);
 
 // 12-Agrega src terminada en NUL al final de dst.Tamaño máximo size -1 (\n)   /
-	//- Devuelve la longitud total de la cadena que intentaron crear		   /
+	// Devuelve la longitud total de la cadena que intentaron crear			   /
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 // 13-Convierte a mayusculas												   /
@@ -93,9 +93,9 @@ int		ft_toupper(int c);
 // 14-Convierte a minusculas												   /
 int		ft_tolower(int c);
 
-/* 15 - ft_strchr - devuelve un puntero a la primera aparición del caracter c
-	en la cadena s. 														  */
-//==========> FALTA <==========
+// 15 - ft_strchr - devuelve un puntero a la primera aparición del char c	   /
+	//en la cadena s. 														   /
+char	*ft_strchr(const char *s, int c);
 
 /* 16 - ft_strrchr - devuelve un puntero a la última aparición del caracter c
 	en la cadena s. 														  */

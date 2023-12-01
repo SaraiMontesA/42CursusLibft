@@ -20,7 +20,7 @@
 //12 - ft_strlcat		OK
 //13 - ft_toupper		OK
 //14 - ft_tolower		OK
-//15 - ft_strchr		//==========> FALTA <==========
+//15 - ft_strchr		OK
 //16 - ft_strrchr		//==========> FALTA <==========
 //17 - ft_strncmp		OK
 //18 - ft_memchr		OK
