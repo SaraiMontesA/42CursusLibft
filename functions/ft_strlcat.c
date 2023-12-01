@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 02:37:53 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 11:10:50 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -23,28 +23,25 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	if (!size)
 		return (ft_strlen(src) + size);
 
-	dest_i = ft_strlen(dest);
-	src_i = 0;
+	src_i = ft_strlen(src);
 	index = 0;
 
 
 	while (dest[index] && index < size)
 		index++;
+	dest_i = index;
 
 	while (src[index - dest_i] && index < size - 1)
 	{
-		dest[dest_i] = src[src_i];
-		dest_i++;
-		src_i++;
+		dest[index] = src[index - dest_i];
+		//dest_i++;
+		index++;
 	}
 
-
 	if (dest_i < size)
-		dest[dest_i] = '\0';
+		dest[index] = '\0';
 
-	index =  dest_i + src_i;
-
-	return (index);
+	return (dest_i + src_i);
 }
 
 /*

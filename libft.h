@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 00:46:31 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 11:16:31 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -83,11 +83,9 @@ void	*ft_memmove(void *dest, const void *src, size_t len);
 //11-Copia de src a dest hasta n y añade \n. Devuelve la longitud total		   /
 size_t	ft_strlcpy(char *dest, char *src, long unsigned int len);
 
-/* 12 - ft_strlcat - agrega la cadena src terminada en NUL al final de dst.
-	Agregará como máximo tamaño - strlen (dst) - 1 bytes, terminando en NUL el
-		resultado. devuelve la longitud total de la cadena que intentaron crear
-			(longitud src + dst). */
-size_t	ft_strlcat(char *dest, const char *src, size_t i); //==========> ERROR <==========
+// 12-Agrega src terminada en NUL al final de dst.Tamaño máximo size -1 (\n)   /
+	//- Devuelve la longitud total de la cadena que intentaron crear		   /
+size_t	ft_strlcat(char *dest, const char *src, size_t size);
 
 // 13-Convierte a mayusculas												   /
 int		ft_toupper(int c);
