@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 00:18:36 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 02:37:53 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,34 +15,36 @@
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	size_t	srci;
-	size_t	desti;
+	size_t	src_i;
+	size_t	dest_i;
+	size_t	index;
 
-	desti = 0;
-	srci = 0;
-	if (size > 0)
+
+	if (!size)
+		return (ft_strlen(src) + size);
+
+	dest_i = ft_strlen(dest);
+	src_i = 0;
+	index = 0;
+
+
+	while (dest[index] && index < size)
+		index++;
+
+	while (src[index - dest_i] && index < size - 1)
 	{
-		while (desti < size - 1)
-		{
-			//while (src[srci] != '\0')
-			//{
-			//}
-				dest[desti] = src[srci];
-				srci++;
-			desti++;
-		}
-
-		/*
-		while (desti < size)
-		{
-			desti++;
-		}
-		
-		*/
-
-			dest[desti] = '\0';
+		dest[dest_i] = src[src_i];
+		dest_i++;
+		src_i++;
 	}
-	return (desti);
+
+
+	if (dest_i < size)
+		dest[dest_i] = '\0';
+
+	index =  dest_i + src_i;
+
+	return (index);
 }
 
 /*
@@ -62,7 +64,7 @@ src: Puntero a la cadena fuente que se concatenará a la cadena de destino.
 size: Tamaño máximo del búfer de destino, incluido el espacio disponible
 para la cadena de destino.
 
-La función strlcat concatena la cadena srca la cadena dest, asegurándose de
+La función strlcat concatena la cadena src a la cadena dest, asegurándose de
 que el tamaño total del resultado no exceda size - 1 para dejar espacio para
 el carácter nulo de terminación.
 

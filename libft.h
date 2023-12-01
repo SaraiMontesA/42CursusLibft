@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/01 00:39:40 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/01 00:46:31 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -104,7 +104,7 @@ int		ft_tolower(int c);
 //==========> FALTA <==========
 
 /* 17-Compara 2 cadenas pasadas como parametro n bytes como maximo, retorna
-	la diferencia entre los 2 primeros caracteres diferentes encontrados.	  /*
+	la diferencia entre los 2 primeros caracteres diferentes encontrados.	  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 
 /* 18-Busca el valor c en los nbytes de la cadena s, devuelve puntero al byte
