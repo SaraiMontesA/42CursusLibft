@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/02 01:08:14 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 03:33:13 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -15,7 +15,7 @@
 
 void	*ft_calloc(size_t num_elements, size_t element_size)
 {
-	void *pointer;
+	void	*pointer;
 
 	pointer = malloc(element_size * num_elements);
 	if (!pointer)
