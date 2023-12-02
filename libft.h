@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/02 00:31:19 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 01:09:41 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -98,29 +98,26 @@ char	*ft_strchr(const char *s, int c);
 // 16-Devuelve un puntero a la última aparición del char c en la cadena s.	   /
 char	*ft_strrchr(const char *s, int c);
 
-/* 17-Compara 2 cadenas pasadas como parametro n bytes como maximo, retorna
-	la diferencia entre los 2 primeros caracteres diferentes encontrados.	  */
+// 17-Compara 2 cadenas pasadas como parametro n bytes como maximo, retorna	   /
+	//la diferencia entre los 2 primeros caracteres diferentes encontrados	   /
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
-/* 18-Busca el valor c en los nbytes de la cadena s, devuelve puntero al byte
-	encontrado o NULL si no lo encuentra									  */
+// 18-Busca el valor c en los nbytes de la cadena s, devuelve puntero al	   /
+	//byte encontrado o NULL si no lo encuentra								   /
 void	*ft_memchr(const void *s, int c, size_t n);
 
-/* 19 - ft_memcmp - compara los primeros n bytes (cada uno interpretado como un
-	carácter sin signo ) de las áreas de memoria s1 y s2. Devuelve un número
-	entero menor que, igual o mayor que cero si se encuentra que los primeros n
-	bytes de s1 , respectivamente, son menores, coinciden o son mayores que los
-	primeros n bytes de s2. 												  */
+// 19-Compara n bytes (unsigned char) de s1 y s2. Devuelve int >0, =0 o <0
+	//si n de s1 es >, = o < que n de s2									   /
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
-/* 20 - ft_strnstr - busca la cadena needle en la otra haystack durante un
-	tamaño 	maximo len. Retorna haystack desde que se encontro lo similitud.  */
-//==========> FALTA <==========
+// 20-Busca la cadena needle en la otra haystack durante un	tamaño maximo	   /
+	//len. Retorna haystack desde que se encontro la similitud				   /
+//  ft_strnstr //==========> FALTA <==========
 
-/* 21 - ft_atoi - limpia una cadena de caracteres retornando el primer valor
-	numerico aparecido en esta en forma de int. En este caso solo acepta un signo
-		si aparece justo antes del valor numerico, si no retorna 0.			  */
-//==========> FALTA <==========
+// 21-Limpia una cadena de caracteres retornando el primer valor numerico	   /
+	//aparecido en esta en forma de int. En este caso solo acepta un signo	   /
+	//si aparece justo antes del valor numerico, si no retorna 0.			   /
+//  ft_atoi //==========> FALTA <==========
 
 // #############################################################################
 // # Parte 1: Funciones que utilizan malloc                               0/2  #
@@ -129,7 +126,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 /* 22 - calloc - asigna memoria para una matriz de tamaño count*size y la
 	rellena de 0. devuelve un puntero a la memoria asignada que está alineado
 	adecuadamente para cualquier tipo de variable 							  */
-//==========> FALTA <==========
+void	*ft_calloc(size_t num_elements, size_t element_size);
 
 /* 23 - strdup - La función strdup () devuelve un puntero a una nueva cadena que
 	es un duplicado de la cadena s1. Decuelve un puntero a la cadena duplicada*/

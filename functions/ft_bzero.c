@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/11/29 20:41:26 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 01:06:53 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -26,6 +26,12 @@ void	ft_bzero(void *s, size_t n)
 }
 
 /*
+La función bzeroen C se utiliza para establecer todos los bytes de un bloque
+de memoria a cero. Es similar a memset, pero específicamente diseñado para
+establecer a cero bytes de memoria. La firma de la función es la siguiente:
+
+void bzero(void *s, size_t n);
+
 s: Puntero al bloque de memoria que se establecerá en cero.
 
 ns: Número de bytes a establecer en cero,
