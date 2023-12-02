@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@estudiante.42urduliz    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/02 01:09:41 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/02 01:20:26 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -123,34 +123,31 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // # Parte 1: Funciones que utilizan malloc                               0/2  #
 // #############################################################################
 
-/* 22 - calloc - asigna memoria para una matriz de tamaño count*size y la
-	rellena de 0. devuelve un puntero a la memoria asignada que está alineado
-	adecuadamente para cualquier tipo de variable 							  */
+// 22-Asigna memoria para matriz tamaño count*size y rellena de 0. Devuelve *  /
+	// a memoria asignada, alineado para cualquier tipo de variable			   /
 void	*ft_calloc(size_t num_elements, size_t element_size);
 
-/* 23 - strdup - La función strdup () devuelve un puntero a una nueva cadena que
-	es un duplicado de la cadena s1. Decuelve un puntero a la cadena duplicada*/
-//==========> FALTA <==========
+// 23-Devuelve * a una string que es un duplicado de la cadena s1			   /
+// strdup //==========> FALTA <==========
 
 // #############################################################################
 // # Parte 2: Funciones adicionales                                      4/12  #
 // #############################################################################
 
-/* 24 - ft_substr - Reserva memoria (con malloc(3)) para la cadena de caracteres
+/* 24-Reserva memoria (con malloc(3)) para la cadena de caracteres
 	que va a devolver, y que proviene de la cadena pasada como argumento. Esta
 	nueva cadena comienza en el índice ’start’ y
 	tiene como tamaño máximo ’len’											  */
-//==========> FALTA <==========
+// ft_substr //==========> FALTA <==========
 
-/* 25 - ft_strjoin - Reserva memoria (con malloc(3))
-	para la cadena de caracteres
+/* 25-Reserva memoria (con malloc(3)) para la cadena de caracteres
 	que va a devolver, y que resulta de la concatenación de s1 y s2 		  */
-//==========> FALTA <==========
+// ft_strjoin //==========> FALTA <==========
 
 /* 26 - ft_strtrim - Reserva memoria (con malloc(3))
 	para la cadena de caracteres que va a devolver, que es una copia de la
-	cadena de caracteres pasada como 	argumento, sin los caracteres
-	indicados en el set pasado como argumento al 	principio y al final
+	cadena de caracteres pasada como argumento, sin los caracteres
+	indicados en el set pasado como argumento al principio y al final
 	de la cadena de caracteres. 											  */
 //==========> FALTA <==========
 
