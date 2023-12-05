@@ -1,21 +1,17 @@
 /******************************************************************************/
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/05 13:39:20 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/05 14:18:42 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
-// Hago un include del libft.h para que me incluya las librerias necesarias
-#include "../libft.h"
-
-int	ft_tolower(int c)
+int	ft_isspace(int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		c = c + 32;
-	return (c);
+	return (c == '\f' || c == '\n' || c == '\r' \
+	|| c == '\t' || c == '\v' || c == ' ');
 }

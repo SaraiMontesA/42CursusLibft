@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/05 08:47:05 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/05 14:23:09 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /******************************************************************************/
 
@@ -117,7 +117,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 // 21-Limpia una cadena de caracteres retornando el primer valor numerico	   /
 	//aparecido en esta en forma de int. En este caso solo acepta un signo	   /
 	//si aparece justo antes del valor numerico, si no retorna 0.			   /
-//  ft_atoi //==========> FALTA <==========
+int		ft_atoi(const char *str);
 
 // #############################################################################
 // # Parte 1: Funciones que utilizan malloc                               0/2  #
@@ -230,4 +230,6 @@ void	ft_putnbr_fd(int nb, int fd);
 	elminar el contenido de algún elemento.									  */
 //==========> FALTA <==========
 
+// 44-Para saber si es un espacio											   /
+int		ft_isspace(int c);
 #endif// Aquí cerramos la libreria											   /
