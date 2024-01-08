@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/11 11:28:32 by sarmonte         ###   ########.fr       */
+/*   Updated: 2024/01/08 12:58:26 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-//void	*ft_memcpy(void *dest, const void *src, size_t n)
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*str1;

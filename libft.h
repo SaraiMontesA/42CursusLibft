@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/11 18:29:30 by sarmonte         ###   ########.fr       */
+/*   Updated: 2024/01/08 11:41:39 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,7 +112,9 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 
 // 20-Busca la cadena needle en la otra haystack durante un	tamaño maximo	   /
 	//len. Retorna haystack desde que se encontro la similitud				   /
-//char *ft_strnstr(const char *haystack, const char *needle);//  ft_strnstr //==========> FALTA <==========
+//char	*ft_strnstr(const char *haystack, const char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+//  ft_strnstr //==========> FALTA <==========
 
 // 21-Limpia una cadena de caracteres retornando el primer valor numerico	   /
 	//aparecido en esta en forma de int. En este caso solo acepta un signo	   /
