@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/11 11:29:17 by sarmonte         ###   ########.fr       */
+/*   Updated: 2024/01/08 17:41:57 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ en su equivalente en formato entero.
 
 Aquí está la firma típica de la función:
 
-
 int atoi(const char *str);
 
 str: Puntero a una cadena de caracteres que representa el número
@@ -59,13 +58,7 @@ str e interpreta su contenido como un número entero.
 Ignora los espacios iniciales en blanco y detiene la conversión
 cuando encuentra el primer carácter no numérico.
 
-
-
-
-
-
-
-En este ejemplo, atoiconvierte la cadena "12345"en el entero 12345.
+En este ejemplo, atoi convierte la cadena "12345"en el entero 12345.
 
 Ten en cuenta que atoi no maneja errores, por lo que si la cadena
 no es un número válido, el resultado puede ser impredecible.

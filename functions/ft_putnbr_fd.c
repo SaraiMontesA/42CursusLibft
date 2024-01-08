@@ -3,20 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sarmonte <sarmonte@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/11 11:27:59 by sarmonte         ###   ########.fr       */
+/*   Updated: 2024/01/08 17:11:07 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
-
-void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 
 void	ft_putnbr_fd(int nb, int fd)
 {
