@@ -6,7 +6,7 @@
 /*   By: sarmonte <sarmonte@student.42urduliz.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 10:34:39 by sarmonte          #+#    #+#             */
-/*   Updated: 2024/01/08 11:41:39 by sarmonte         ###   ########.fr       */
+/*   Updated: 2024/01/08 15:29:31 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@
 
 /* Proporciona prototipos de funciones para realizar 
 	operaciones de entrada/salida											  */
-# include <stdio.h>
+# include <stdio.h> //Solo para printf, quitar al final. FALTA borrar
 
 /* Proporciona prototipos de funciones para
 	manipular cadenas de caracteres 										  */
