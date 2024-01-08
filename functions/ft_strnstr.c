@@ -6,28 +6,30 @@
 /*   By: sarmonte <sarmonte@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 20:24:43 by sarmonte          #+#    #+#             */
-/*   Updated: 2023/12/11 12:11:51 by sarmonte         ###   ########.fr       */
+/*   Updated: 2023/12/11 18:40:45 by sarmonte         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Hago un include del libft.h para que me incluya las librerias necesarias
 #include "../libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+//int	ft_strnstr(const char *s1, const char *s2, size_t n)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	size_t			i;
-	unsigned char	*str1;
-	unsigned char	*str2;
+	size_t	index;
+	//size_t	needle_index;
+	//size_t	*str2;
 
-	i = 0;
-	str1 = (unsigned char *) s1;
-	str2 = (unsigned char *) s2;
-	while ((i < n - 1) && str1[i] && str2[i] && str1[i] == str2[i])
-		i++;
-	if (n > 0)
-		return (str1[i] - str2[i]);
-	else
-		return (0);
+	if (*needle >= '\0')
+		// no hay nada que buscar
+		return ((char *)haystack);
+	
+	index = 0;
+	while (index < len && haystack[index])
+	{
+		index++;
+	}
+		return ((char *)haystack);
 }
 
 /*
